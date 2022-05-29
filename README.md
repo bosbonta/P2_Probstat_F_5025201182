@@ -11,3 +11,4 @@ kadar saturasi oksigen dari 9 responden tersebut. Kemudian, 9 responden tersebut
 diminta melakukan aktivitas 𝐴. Setelah 15 menit, peneliti tersebut mencatat kembali
 kadar saturasi oksigen dari 9 responden tersebut. Berikut data dari 9 responden
 mengenai kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas
+
