@@ -270,11 +270,12 @@ dapat dilakukan cara berikut
 ```R
 DataGTL$Glass <- as.factor(DataGTL$Glass)
 DataGTL$Temp <- as.factor(DataGTL$Temp)
-    
+
 anova <- aov(Light ~ Glass*Temp, data = DataGTL)
 summary(anova)
 ```
 Kedua variabel pada DataGTL dipisah lalu dilakukan pengujian ANOVA dua arah.
+![5b](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.5b.png)
 
 ### 5c Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)!
 
@@ -282,11 +283,12 @@ Kedua variabel pada DataGTL dipisah lalu dilakukan pengujian ANOVA dua arah.
 dataGTL_summary <- group_by(DataGTL, Glass, Temp) %>% summarise(mean=mean(Light), sd=sd(Light)) %>%
                             arrange(desc(mean))
 ```
-
+![5c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.5c.png)
 ### 5d Lakukan uji Tukey!
 ```R
 tukeyTest <- TukeyHSD(anova)
 ```
+![5d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.5d.png)
 
 ### 5e Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey.
 ```R
