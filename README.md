@@ -105,7 +105,12 @@ dari hasil output yang didapatkan adalah nilai z ```8.9744```, p-value ```1```, 
 
 ### 2c Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
-Hipotesis awal (H0) yaitu " Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun" dapat diterima dengan alasan p-value lebih besar dari tingkat signifikansi (dari soal sebelumnya 𝛼 5% atau 0.05)
+```
+P(Z > 8.9744) = 1 - P(Z < 8.977)
+              = 1 - 1 = 0
+```
+
+Hipotesis awal (H0) yaitu " Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun" dapat diterima dengan alasan nilai t dari uji z adalah mendekati 0
 
 ## Soal 3
 
@@ -120,4 +125,7 @@ diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
 rata-ratanya (α= 0.05)? Buatlah :
 
 ### 3a  H0 dan H1
+Hipotesis Awal H0 : "Rata-rata saham di bandung = di Bali".
+Hipotesis alternatif H1 : "Rata-rata saham di bandung != di Bali"
 
+### 3b  Hitung Sampel Statistik
