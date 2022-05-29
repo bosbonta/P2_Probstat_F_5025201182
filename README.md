@@ -73,4 +73,5 @@ signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesu
 aktivitas A pada tingkat signifikansi 5%.
 
 >dokumentasi
+
 ![1d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic1.png)
