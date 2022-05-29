@@ -208,7 +208,45 @@ Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup 2,grup 
   
   ![4c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4c.png)
 ### 4b
+carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
+daoat menggunakan
+```R
+bartlett.test(DataKucingITS$Length, DataKucingITS$Group)
+```
+maka nilainya K-squared  ```0.43292```, df  ```2```, p-value  ```0.8054```
+
 ### 4c
+Untuk uji ANOVA (satu arah), buatlah model linier dengan Panjang versus
+Grup dan beri nama model tersebut model 1.
+
+dapat menggunakan
+
+```R
+model1 <- lm(DataKucingITS$Length~DataKucingITS$Group)
+summary(model1)
+```
+
 ### 4d
+Dari Hasil Poin C, Berapakah nilai-p ? , Apa yang dapat Anda simpulkan
+dari H0?
+
+Berdasarkan hasil 4C, didapatkan nilai P adalah ```0.6401```. Sehingga Hipotesis Awal H0 diterima
+
 ### 4e
+Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain? Jelaskan!
+dapat menggunakan 
+```R
+av <- aov(Length ~ factor(Group), data = DataKucingITS)
+TukeyHSD(av)
+```
 ### 4f
+Visualisasikan data dengan ggplot2
+
+```R
+library(ggplot2)
+ggplot(DataKucingITS, aes(x = Group, y = Length)) + 
+       geom_boxplot(fill = "Red", colour = "black")  + 
+       scale_x_discrete() + xlab("Group") + ylab("Length")
+```     
+hasil visualisasi
+  ![4d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4d.png)
