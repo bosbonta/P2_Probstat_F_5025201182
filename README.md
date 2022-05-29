@@ -51,7 +51,7 @@ untuk menjawab soal ini dapat menggunakan rumus
 #1b
 t.test (data1 $Y , data1 $X , paired=TRUE)
 ```
-maka akan didapatkan t (p-value) bernilai ```6.003e-05```
+maka akan didapatkan t (p-value) bernilai ```7.6525```
 
 ### 1c
 
@@ -118,3 +118,6 @@ didapatkanlah data berikut dari perusahaan saham tersebut.
 Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil
 diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
 rata-ratanya (α= 0.05)? Buatlah :
+
+### 3a  H0 dan H1
+
