@@ -31,11 +31,14 @@ data1=data.frame(responden=c(1,2,3,4,5,6,7,8,9),
 
 ```
 
+![1b](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.1b.png)
 
+### 1a Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel di atas
 
-untuk menjawab soal ini kita dapat mencari selisih y-x dari masing-masing responden
+untuk menjawab soal ini dapat menggunakan rumus
 
 ``` R
-#1a
-
+#1b
+sd(data1 $Y - data1 $X)
 ```
+maka akan didapatkan nilai ```6.359595```
