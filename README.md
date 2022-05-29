@@ -14,3 +14,28 @@ mengenai kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas
 
 ![1a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.1a.png)
 
+Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari
+responden ke-3 ketika belum melakukan aktivitas 𝐴 sebanyak 67, dan setelah
+melakukan aktivitas 𝐴 sebanyak 70.
+
+>membuat tabel di R
+
+Untuk menjawab soal nomor 1 ini, pertama akan dibuat tabel dengan R supaya mempermudah mengerjakan soal
+pembuatannya dengan 
+
+``` R
+#1
+data1=data.frame(responden=c(1,2,3,4,5,6,7,8,9),
+                  X=c(78,75,67,77,70,72,78,74,77), 
+                  Y=c(100,95,70,90,90,90,89,90,100))
+
+```
+
+
+
+untuk menjawab soal ini kita dapat mencari selisih y-x dari masing-masing responden
+
+``` R
+#1a
+
+```
