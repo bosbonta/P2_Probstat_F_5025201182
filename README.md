@@ -151,3 +151,26 @@ plotDist(dist ='t', df = 2, col="red")
 ```
 hasil grafik yang didapat adalah
 ![3c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.3b.png)
+
+### 3d Nilai Kritikal
+dapat menggunakan cara 
+```qt(p = 0.05, df = 2, lower.tail = FALSE)```
+maka didapatkan nilainya ```2.919986```
+
+>dokumentasi
+
+![3d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.3c.png)
+
+### 3e Keputusan
+
+Hipotesis awal H0 ditolak karena nilai T lebih kecil dari sp
+
+```R
+sp <- (((n_bandung-1)*dp_bandung)+ ((n_bali-1)*dp_bali))/(n_bali + n_bandung - df)
+T <- (n_bandung - n_bali)/(sp*((1/n_bandung) + (1/n_bali)))
+```
+sp bernilai ```1.463182``` dan T  bernilai ```-60.97492```
+
+### 3f Kesimpulan
+
+Kesimpulan yang didapatkan yaitu **tidak terdapat** perbedaan rata-rata yang terjadi jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal
