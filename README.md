@@ -65,7 +65,12 @@ uji t yang didapat dari perhitungan no 2 bernilai ```7.6525```
 sedangkan diketahui derajat bebas bernilai 8 , didapat dari 9-1. Nilai kritis 𝑡 dengan derajat bebas 8 dan tingkat signifikansi 5%
 adalah ±2,306 (lihat tabel dibawah)
 
+![1c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.1c.png)
+
 Perhatikan bahwa karena |𝑡ℎ𝑖𝑡𝑢𝑛𝑔| > |𝑡𝑘𝑟𝑖𝑡𝑖𝑠|, yakni 7,652 > 2,306, maka disimpulkan bahwa
 hipotesis nol ditolak dan hipotesis alternatif diterima. Hal ini berarti terdapat pengaruh yang
 signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
 aktivitas A pada tingkat signifikansi 5%.
+
+>dokumentasi
+![1](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.1.png)
