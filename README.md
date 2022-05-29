@@ -174,3 +174,41 @@ sp bernilai ```1.463182``` dan T  bernilai ```-60.97492```
 ### 3f Kesimpulan
 
 Kesimpulan yang didapatkan yaitu **tidak terdapat** perbedaan rata-rata yang terjadi jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal
+
+## Soal 4
+
+Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya
+ia mengumpulkan data tiga spesies kucing yaitu kucing oren, kucing hitam dan
+kucing putih dengan panjangnya masing-masing.
+Jika :
+diketahui dataset https://intip.in/datasetprobstat1
+H0 : Tidak ada perbedaan panjang antara ketiga spesies atau rata-rata panjangnya
+sama
+Maka Kerjakan atau Carilah:
+
+### 4a
+Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup 2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan lihat apakah ada outlier utama dalam homogenitas varians
+```R
+ DataKucingITS <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt"),header = TRUE, check.names = TRUE)
+ byGroup <- split(DataKucingITS, DataKucingITS$Group)
+ grup1 <- byGroup$`1`
+ grup2 <- byGroup$`2`
+ grup3 <- byGroup$`3`
+ ```
+
+ ```qqnorm(grup1$Length,main = "Grup1")```
+ 
+ ![4a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4a.png)
+ 
+ ``` qqnorm(grup2$Length,main = "Grup2")```
+ 
+ ![4b](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4b.png)
+  
+  ``` qqnorm(grup3$Length,main = "Grup3")```
+  
+  ![4c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4c.png)
+### 4b
+### 4c
+### 4d
+### 4e
+### 4f
