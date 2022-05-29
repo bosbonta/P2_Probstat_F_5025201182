@@ -67,9 +67,9 @@ adalah ±2,306 (lihat tabel dibawah)
 
 ![1c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.1c.png)
 
-Perhatikan bahwa karena |𝑡ℎ𝑖𝑡𝑢𝑛𝑔| > |𝑡𝑘𝑟𝑖𝑡𝑖𝑠|, yakni 7,652 > 2,306, maka disimpulkan bahwa
-hipotesis nol ditolak dan hipotesis alternatif diterima. Hal ini berarti terdapat pengaruh yang
-signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
+Perhatikan bahwa  |𝑡ℎ𝑖𝑡𝑢𝑛𝑔| > |𝑡𝑘𝑟𝑖𝑡𝑖𝑠|, yakni 7,652 > 2,306, maka disimpulkan bahwa
+hipotesis awal ditolak dan hipotesis alternatif diterima. Hal ini berarti terdapat pengaruh yang
+signifikan secara statistika dalam hal kadar saturasi oksigen, sebelum dan sesudah melakukan
 aktivitas A pada tingkat signifikansi 5%.
 
 >dokumentasi
@@ -89,4 +89,20 @@ setuju bgt
 
 ### 2b Jelaskan maksud dari output yang dihasilkan!
 
+untuk menjawab soal ini dapat menggunakan rumus
+``` R
+#2b
+zsum.test(mean.x=23500, sigma.x = 3900, n.x = 100,  
+          alternative = "less", mu = 20000,
+          conf.level = 0.95)
+```
 
+>dokumentasi
+
+![2a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic2.png)
+
+dari hasil output yang didapatkan adalah nilai z ```8.9744```, p-value ```1```, dan selang atas kepercayaan rata rata ```24141.49```
+
+### 2c Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
+
+Hipotesis awal (H0) yaitu " Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun" dapat diterima dengan alasan p-value lebih besar dari tingkat signifikansi (dari soal sebelumnya 𝛼 5% atau 0.05)
