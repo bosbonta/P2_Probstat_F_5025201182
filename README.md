@@ -89,7 +89,7 @@ setuju bgt
 
 ### 2b Jelaskan maksud dari output yang dihasilkan!
 
-untuk menjawab soal ini dapat menggunakan rumus
+untuk menjawab soal ini dapat menggunakan cara
 ``` R
 #2b
 zsum.test(mean.x=23500, sigma.x = 3900, n.x = 100,  
@@ -125,7 +125,29 @@ diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
 rata-ratanya (α= 0.05)? Buatlah :
 
 ### 3a  H0 dan H1
-Hipotesis Awal H0 : "Rata-rata saham di bandung = di Bali".
+Hipotesis Awal H0 : "Rata-rata saham di bandung = di Bali"
+
 Hipotesis alternatif H1 : "Rata-rata saham di bandung != di Bali"
 
 ### 3b  Hitung Sampel Statistik
+untuk menjawab soal ini dapat menggunakan cara
+``` R
+#3b
+tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, 
+          mean.y=2.79, s.y = 1.32, n.y = 27, 
+          alternative = "two.sided", mu = 0, var.equal = TRUE,
+          conf.level = 0.95)
+```
+
+>dokumentasi
+
+![3b](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.3a.png)
+
+### 3c  Lakukan Uji Statistik (df =2)
+untuk menjawab soal ini dapat menggunakan 
+```R
+#3c
+plotDist(dist ='t', df = 2, col="red")
+```
+hasil grafik yang didapat adalah
+![3c](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.3b.png)
