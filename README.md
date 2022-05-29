@@ -249,4 +249,37 @@ ggplot(DataKucingITS, aes(x = Group, y = Length)) +
        scale_x_discrete() + xlab("Group") + ylab("Length")
 ```     
 hasil visualisasi
-  ![4d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4d.png)
+![4d](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.4d.png)
+  
+
+## Soal 5
+Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: Data Hasil Eksperimen. Dengan data tersebut:
+
+### 5a Buatlah plot sederhana untuk visualisasi data
+pertama harus menginstall package yang ada
+lalu panggil file GTL.cvs. untuk memfisualisasi kta gunakan read_cvs dan head(GTL)
+```R
+DataGTL <- read_csv("https://drive.google.com/u/0/uc?id=1aLUOdw_LVJq6VQrQEkuQhZ8FW43FemTJ&export=download")
+qplot(x = Temp, y = Light, geom = "jitter", data = DataGTL) +
+  facet_grid(.~Glass, labeller = label_both)
+```
+![5a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic.5a.png)
+
+### 5b Lakukan uji ANOVA dua arah!
+dapat dilakukan cara berikut
+```R
+DataGTL$Glass <- as.factor(DataGTL$Glass)
+DataGTL$Temp <- as.factor(DataGTL$Temp)
+    
+anova <- aov(Light ~ Glass*Temp, data = DataGTL)
+summary(anova)
+```
+Kedua variabel pada DataGTL dipisah lalu dilakukan pengujian ANOVA dua arah.
+
+### 5c Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)!
+
+```R
+dataGTL_summary <- group_by(DataGTL, Glass, Temp) %>% summarise(mean=mean(Light), sd=sd(Light)) %>%
+                            arrange(desc(mean))
+```
+
