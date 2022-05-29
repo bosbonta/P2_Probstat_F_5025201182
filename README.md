@@ -283,3 +283,13 @@ dataGTL_summary <- group_by(DataGTL, Glass, Temp) %>% summarise(mean=mean(Light)
                             arrange(desc(mean))
 ```
 
+### 5d Lakukan uji Tukey!
+```R
+tukeyTest <- TukeyHSD(anova)
+```
+
+### 5e Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey.
+```R
+tukeyCLD <- multcompLetters4(anova, tukeyTest)
+```
+
