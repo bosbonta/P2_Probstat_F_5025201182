@@ -101,8 +101,20 @@ zsum.test(mean.x=23500, sigma.x = 3900, n.x = 100,
 
 ![2a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic2.png)
 
-dari hasil output yang didapatkan adalah nilai z ```8.9744```, p-value ```1```, dan selang atas kepercayaan rata rata ```24141.49```
+dari hasil output yang didapatkan adalah nilai z ```8.9744```, p-value ```1```, dan 95 percent confidence interval ```24141.49```
 
 ### 2c Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
 Hipotesis awal (H0) yaitu " Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun" dapat diterima dengan alasan p-value lebih besar dari tingkat signifikansi (dari soal sebelumnya 𝛼 5% atau 0.05)
+
+## Soal 3
+
+Diketahui perusahaan memiliki seorang data analyst ingin memecahkan
+permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
+didapatkanlah data berikut dari perusahaan saham tersebut.
+
+![3a](https://github.com/bosbonta/P2_Probstat_F_5025201182/blob/main/screenshot/pic3.png)
+
+Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil
+diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
+rata-ratanya (α= 0.05)? Buatlah :
