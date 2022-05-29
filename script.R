@@ -70,14 +70,18 @@ DataGTL <- read_csv("https://drive.google.com/u/0/uc?id=1aLUOdw_LVJq6VQrQEkuQhZ8
 qplot(x = Temp, y = Light, geom = "jitter", data = DataGTL) +
   facet_grid(.~Glass, labeller = label_both)
 
-GTL$Glass <- as.factor(GTL$Glass)
-GTL$Temp_Factor <- as.factor(GTL$Temp)
-str(GTL)
+DataGTL$Glass <- as.factor(DataGTL$Glass)
+DataGTL$Temp <- as.factor(DataGTL$Temp)
+
+anova <- aov(Light ~ Glass*Temp, data = DataGTL)
+summary(anova)
 
 dataGTL_summary <- group_by(DataGTL, Glass, Temp) %>% summarise(mean=mean(Light), sd=sd(Light)) %>%
   arrange(desc(mean))
 dataGTL_summary
 
 tukeyTest <- TukeyHSD(anova)
+tukeyTest
 
 tukeyCLD <- multcompLetters4(anova, tukeyTest)
+tukeyCLD
